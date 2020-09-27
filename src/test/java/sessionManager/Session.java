@@ -11,7 +11,7 @@ public class Session {
     private AppiumDriver driver;
 
     public Session() throws MalformedURLException {
-        driver = FactoryDevice.make("android").create();
+        driver = FactoryDevice.make("browserStack").create();
     }
 
     public static Session getInstance() throws MalformedURLException {

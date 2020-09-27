@@ -18,10 +18,10 @@ public class ToDoTest {
     //Verificar la creacion de un nuevo ToDo
     @Test
     public void verifyNewTodo() throws MalformedURLException {
-        String title = "Eydan";
-        String note = "hacer tarea";
+        String title = "Quena";
+        String note = "Afinacion";
 
-        String resultExpected = "Eydan";
+        String resultExpected = "Quena";
 
         mainTodo.addToDo.click();
         newToDo.titleTB.type(title);
@@ -37,7 +37,7 @@ public class ToDoTest {
     @Test
     public void verifyListToDo() throws MalformedURLException {
         //Arrange
-        int resultExpected = 4;
+        int resultExpected = 1;
         //Act
         int resultActual = mainTodo.sizeListToDo();
         //Assert

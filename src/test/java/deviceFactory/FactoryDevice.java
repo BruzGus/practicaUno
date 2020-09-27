@@ -14,6 +14,10 @@ public class FactoryDevice {
             case "windowsPhone":
                 device = new WindowsPhone();
                 break;
+            case "browserStack":
+                device = new BrowserStack();
+                break;
+
             default:
                 device = new Android();
                 break;
